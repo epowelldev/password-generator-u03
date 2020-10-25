@@ -25,25 +25,25 @@ function generatePassword() {
   // prompt for types of characters used: numbers, lowercase, UPPERCASE, special characters:
   // ok on confirm == true, cancel on confirm == false
 
-  var useNumbers = confirm("Do you want to use numbers in your password?");
+  var useNumbers = confirm("Do you want to use numbers in your password? \n OK = Yes \n Cancel = No");
   // IF `useNumbers` is true, THEN add `numbers` to `characterSelection` array
   if (useNumbers) {
     characterSelection = characterSelection.concat(numbers);
   }
 
-  var useLowercase = confirm("Do you want to use lowercase letters in your password?");
+  var useLowercase = confirm("Do you want to use lowercase letters in your password? \n OK = Yes \n Cancel = No");
   // IF `useLowercase` is true, THEN add `letterslower` to `characterSelection` array
   if (useLowercase) {
     characterSelection = characterSelection.concat(letterslower);
   }
 
-  var useUppercase = confirm("Do you want to use UPPERCASE LETTERS in your password?");
+  var useUppercase = confirm("Do you want to use UPPERCASE LETTERS in your password? \n OK = Yes \n Cancel = No");
   // IF `useUppercase` is true, THEN add `lettersUPPER` to `characterSelection` array
   if (useUppercase) {
     characterSelection = characterSelection.concat(lettersUPPER);
   }
 
-  var useSpecial = confirm("Do you want to use Special Characters (ie: !@#$%^ etc) in your password?");
+  var useSpecial = confirm("Do you want to use Special Characters (ie: !@#$%^ etc) in your password? \n OK = Yes \n Cancel = No");
   // IF `useSpecial` is true, THEN add `specialCharacters` to `characterSelection` array
   if (useSpecial) {
     characterSelection = characterSelection.concat(specialCharacters);
