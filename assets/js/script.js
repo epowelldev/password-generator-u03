@@ -55,7 +55,7 @@ function generatePassword() {
   }
 
   // generate a password randomly based on `characterSelection` and the length of that array, as well as how many characters long the password should be
-  for (i = 0; i < passLength; i++) {
+  for (var i = 0; i < passLength; i++) {
     ongoingPWGen = ongoingPWGen + (characterSelection[Math.floor(Math.random() * (characterSelection.length))])
   } 
 
