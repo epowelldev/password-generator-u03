@@ -24,6 +24,7 @@ function generatePassword() {
 
   // prompt for types of characters used: numbers, lowercase, UPPERCASE, special characters:
   // ok on confirm == true, cancel on confirm == false
+  // these are for the POTENTIAL of characters to be used
 
   var useNumbers = confirm("Do you want to use numbers in your password? \n OK = Yes \n Cancel = No");
   // IF `useNumbers` is true, THEN add `numbers` to `characterSelection` array
