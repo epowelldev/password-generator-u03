@@ -13,6 +13,7 @@ const specialCharacters = [" ", "!", '"', "#", "$", "%", "&", "'", "(", ")", "*"
 function generatePassword() {
 
   var characterSelection = [];
+  let ongoingPWGen = "";
 
   // prompt for password length
   var passLength = parseInt(prompt("How many characters do you want in your password? \n Enter a number: 8 - 128"))
@@ -48,10 +49,22 @@ function generatePassword() {
     characterSelection = characterSelection.concat(specialCharacters);
   }
 
+  // check to see if user selected at least one type of character, if not- alert and exit
+  if (characterSelection == "") {
+    return alert("You MUST select at least one character type for password to be generated: \n Numbers \n Lowercase \n Uppercase \n Special Characters");
+  }
 
+  // generate a password randomly based on `characterSelection` and the length of that array, as well as how many characters long the password should be
+  for (i = 0; i < passLength; i++) {
+    ongoingPWGen = ongoingPWGen + (characterSelection[Math.floor(Math.random() * (characterSelection.length))])
+  } 
 
+  console.log(ongoingPWGen);
   console.log(passLength, useNumbers, useLowercase, useUppercase, useSpecial);
   console.log(characterSelection);
+
+  // return `ongoingPWGen` to `password` in `writePassword` to desplay in html
+  return ongoingPWGen;
 }
 
 // Write password to the #password input
