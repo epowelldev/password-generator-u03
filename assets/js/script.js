@@ -59,9 +59,10 @@ function generatePassword() {
     ongoingPWGen = ongoingPWGen + (characterSelection[Math.floor(Math.random() * (characterSelection.length))])
   } 
 
-  console.log(ongoingPWGen);
-  console.log(passLength, useNumbers, useLowercase, useUppercase, useSpecial);
-  console.log(characterSelection);
+  // console.log(ALLTHETHINGS) i think saved me during this assignment
+  // console.log(ongoingPWGen);
+  // console.log(passLength, useNumbers, useLowercase, useUppercase, useSpecial);
+  // console.log(characterSelection);
 
   // return `ongoingPWGen` to `password` in `writePassword` to desplay in html
   return ongoingPWGen;
