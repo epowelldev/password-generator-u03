@@ -17,7 +17,7 @@ The application will (for each character of the password) randomly select a char
 
 The application will then post the password in the textbox.
 
-![Image of Deployed Application](assets\images\deployed-generator.png "Deployed Screenshot")
+![Image of Deployed Application](./assets/images/deployed-generator.png "Deployed Screenshot")
 
 [Deployed Application](https://epowelldev.github.io/password-generator-u03/)
 
